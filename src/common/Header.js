@@ -34,7 +34,7 @@ export default class Header extends React.Component {
 
             <div>
                 <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-                    <div className="container">
+                    <div className="container-fluid">
                         <Navbar.Brand href="#home"><img src={logo} className='p-2' alt='TaskTrackerLogo' width='162' height='60' /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">

@@ -1,0 +1,16 @@
+.illustrations {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    /*  : 15px; */
+}
+
+.row{
+    padding: 0vh 10vw 0vh 10vw !important;
+    margin: 5vh 0vw 5vh 0vw !important;
+}
+
+.body_content {
+    font-size: small;
+    color: red;
+}

@@ -1,0 +1,21 @@
+.moviecard {
+        min-height: 150px;
+}
+
+.moviecard-body {
+    padding-top: 50px;
+    background-color: skyblue;
+    min-height: 150px;
+}
+
+.moviecard-title {
+    color: black;
+}
+
+.moviecard-type {
+    color: teal;
+}
+
+.moviecard-body:hover {
+    background-color: rgb(80, 147, 173);
+}

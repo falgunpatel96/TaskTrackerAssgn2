@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer className="footer">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row justify-content-center align-items-center text-center">
                         <div className="col-12 col-sm-6 order-sm-first col-md-4 col-lg-4 p-3">
                             <img src={logo} alt='TaskTrackerLogo' width="215" height="80"/>
