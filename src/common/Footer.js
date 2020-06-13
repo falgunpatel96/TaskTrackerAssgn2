@@ -16,19 +16,19 @@ export default class Footer extends React.Component {
         return (
             <footer className="footer">
                 <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-7 col-sm-4">
-                            <img src={logo} alt='TaskTrackerLogo' />
+                    <div className="row justify-content-center align-items-center text-center">
+                        <div className="col-12 col-sm-6 order-sm-first col-md-4 col-lg-4 p-3">
+                            <img src={logo} alt='TaskTrackerLogo' width="215" height="80"/>
                         </div>
-                        <div className="col-4 offset-1 col-sm-3 m-0 text-center">
+                        <div className="col-12 col-sm-12 order-sm-last col-md-4 order-md-first col-lg-4 p-3">
                             <h5>Links</h5>
                             {/* <ul className="list-unstyled"> */}
-                                <a href="#">Home</a> |
-                                 <a href="#"> Contact Us</a> | 
-                                <a href="#"> About Us</a>
+                            <a href="#">Home</a>&nbsp;|&nbsp;
+                                 <a href="#">Contact&nbsp;Us</a>&nbsp;|&nbsp;
+                                <a href="#">About&nbsp;Us</a>
                             {/* </ul> */}
                         </div>
-                        <div className="col-12 col-sm-4  text-center">
+                        <div className="col-12 col-sm-6 order-sm-first col-md-4 col-lg-4 p-3">
                             <div>
                                 <a href="http://www.facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>&nbsp;&nbsp;
                                 <a href="http://www.twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>&nbsp;&nbsp;
