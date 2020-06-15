@@ -6,6 +6,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+import { Navbar, Nav } from 'react-bootstrap';
 //Logo Image
 import logo from '../assets/tracker_icon.png';
 import "./styles.css";
@@ -18,12 +19,12 @@ export default class Footer extends React.Component {
                 <div className="container-fluid">
                     <div className="row justify-content-center align-items-center text-center">
                         <div className="col-12 col-sm-6 order-sm-first col-md-4 col-lg-4 p-3">
-                            <img src={logo} alt='TaskTrackerLogo' width="215" height="80"/>
+                            <Navbar.Brand href="/"><img src={logo} alt='TaskTrackerLogo' width="215" height="80" /></Navbar.Brand>
                         </div>
                         <div className="col-12 col-sm-12 order-sm-last col-md-4 order-md-first col-lg-4 p-3">
                             <h5>Links</h5>
                             {/* <ul className="list-unstyled"> */}
-                            <a href="#">Home</a>&nbsp;|&nbsp;
+                            <a href="/">Home</a>&nbsp;|&nbsp;
                                  <a href="#">Contact&nbsp;Us</a>&nbsp;|&nbsp;
                                 <a href="#">About&nbsp;Us</a>
                             {/* </ul> */}
