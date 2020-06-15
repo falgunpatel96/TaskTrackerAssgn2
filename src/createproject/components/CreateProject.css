@@ -1,0 +1,12 @@
+/* .form {
+    padding: 10px;
+} */
+
+.row{
+    padding:0 !important;
+}
+
+.cardHeader {
+    background-color: skyblue;
+    padding: 3px;
+}
