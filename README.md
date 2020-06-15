@@ -92,9 +92,9 @@ By taking this theory in concern, I have used light blue shade colours for backg
 
 ### References
 
-[1] Freepik, “Graphic Resources for everyone,” Freepik, 19-May-2020. [Online]. 
-Available: https://www.freepik.com/. [Accessed: 12-Jun-2020].
-[2] "Introduction", Getbootstrap.com, 2020. [Online]. 
-Available: https://getbootstrap.com/docs/4.5/getting-started/introduction/. [Accessed: 13- Jun- 2020].
-[3] Mars, “mars/create-react-app-buildpack,” GitHub, 28-Feb-2020. [Online]. 
-Available: https://github.com/mars/create-react-app-buildpack. [Accessed: 13-Jun-2020].
+[1] Freepik, “Graphic Resources for everyone,” Freepik, 19-May-2020. [Online].  
+Available: https://www.freepik.com/. [Accessed: 12-Jun-2020].  
+[2] "Introduction", Getbootstrap.com, 2020. [Online].  
+Available: https://getbootstrap.com/docs/4.5/getting-started/introduction/. [Accessed: 13- Jun- 2020].  
+[3] Mars, “mars/create-react-app-buildpack,” GitHub, 28-Feb-2020. [Online].  
+Available: https://github.com/mars/create-react-app-buildpack. [Accessed: 13-Jun-2020].  
