@@ -33,7 +33,7 @@ export default class Header extends React.Component {
         return (
 
             <div>
-                <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+                <Navbar className="navnav" collapseOnSelect expand="md" bg="ligth" variant="light">
                     <div className="container-fluid">
                         <Navbar.Brand href="/"><img src={logo} className='p-2' alt='TaskTrackerLogo' width='162' height='60' /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
