@@ -5,3 +5,8 @@
 .row{
     padding:0 !important;
 }
+
+.form-control input{
+    color:red;
+    border: 1px solid #b8b8b8 !important;
+}
