@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 import TeamDummyData from './TeamDummyData';
-import { Dropdown, Card } from 'react-bootstrap';
+import { Dropdown, Card, Modal, Button } from 'react-bootstrap';
+import { Redirect, Router, Link, NavLink } from 'react-router-dom'
 
 import './CreateProject.css'
 // import logo from '../../assets/tracker_icon.png';
@@ -15,6 +16,7 @@ export class CreateProject extends Component {
         this.state = {
             selectedTeam: {},
             pname: '',
+            isOpen: false,
         }
     }
 
@@ -32,7 +34,8 @@ export class CreateProject extends Component {
         } else if (this.state.selectedTeam.name === undefined) {
             alert("Please select the team fot the project!")
         } else {
-            alert("Project created")
+            // alert("Project created")
+            this.openModal()
         }
     }
 
@@ -49,10 +52,44 @@ export class CreateProject extends Component {
         this.setState({ selectedTeam });
     }
 
+    closeModal = () => {
+        this.setState({
+            isOpen: false,
+        })
+        const tag = document.createElement("a")
+        tag.setAttribute("class", "nav-link")
+        tag.setAttribute("href", "/myproject")
+        tag.setAttribute("data-rb-event-key", "/myproject")
+        const header = document.getElementById("header")
+        header.appendChild(tag)
+        tag.click()
 
+
+    }
+
+    openModal = () => {
+        this.setState({
+            isOpen: true,
+        })
+    }
     render() {
         return (
-            <div>
+            <div id="header">
+
+                <Modal show={this.state.isOpen}>
+                    <Modal.Header>
+                        <Modal.Title>Successful</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body>
+                        <p>Your project is successfully created!</p>
+                    </Modal.Body>
+
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={this.closeModal}>Done</Button>
+                    </Modal.Footer>
+                </Modal>
+
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-8 col-md-6 col-lg-4 border rounded" >
                         <div className="container p-4">
@@ -60,7 +97,7 @@ export class CreateProject extends Component {
 
                             <div className="form-group">
                                 <label>Name</label>
-                                <input type="text" name="pname" className="form-control  border" placeholder="Enter project name" onChange={this.inputHandler}/>
+                                <input type="text" name="pname" className="form-control  border" placeholder="Enter project name" onChange={this.inputHandler} />
                             </div>
 
                             <div className="form-group">
@@ -104,7 +141,7 @@ export class CreateProject extends Component {
                                 <textarea className="form-control  border" aria-label="With textarea" placeholder="Enter project description" />
                             </div>
 
-                            <button type="submit" onClick={this.formSubmitted} className="btn btn-primary btn-block">Create Project</button>
+                            <button onClick={this.formSubmitted} className="btn btn-primary btn-block">Create Project</button>
 
                         </div>
                     </div>
